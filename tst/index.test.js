@@ -1,4 +1,4 @@
-import AutoGrowingInput from "../src/index.vue";
+import AutoGrowingInput from "../src/AutoGrowingInput.vue";
 import { mount } from "@vue/test-utils";
 
 describe("AutoGrowingInput", () => {
