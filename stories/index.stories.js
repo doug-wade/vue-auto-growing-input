@@ -1,4 +1,4 @@
-import AutoGrowingInput from "../src/index.vue";
+import AutoGrowingInput from "../src/AutoGrowingInput.vue";
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {

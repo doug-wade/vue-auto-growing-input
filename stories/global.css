@@ -1,0 +1,9 @@
+div[contenteditable] {
+  border: black;
+  height: 400px;
+  width: 400px;
+}
+
+body {
+  background-color: red;
+}
