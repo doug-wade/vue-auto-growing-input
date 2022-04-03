@@ -6,12 +6,7 @@ export default {
   component: AutoGrowingInput,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
-    backgroundColor: { control: "color" },
-    onClick: {},
-    size: {
-      control: { type: "select" },
-      options: ["small", "medium", "large"],
-    },
+    placeholder: { type: String },
   },
 };
 
@@ -27,26 +22,12 @@ const Template = (args) => ({
   template: '<auto-growing-input v-bind="args" />',
 });
 
-export const Primary = Template.bind({});
+export const RequiredProps = Template.bind({});
 // More on args: https://storybook.js.org/docs/vue/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: "AutoGrowingInput",
-};
+RequiredProps.args = {};
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: "AutoGrowingInput",
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: "large",
-  label: "AutoGrowingInput",
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: "small",
-  label: "AutoGrowingInput",
+export const Placeholder = Template.bind({});
+// More on args: https://storybook.js.org/docs/vue/writing-stories/args
+Placeholder.args = {
+  placeholder: "placeholder text",
 };

@@ -1,0 +1,6 @@
+div[contenteditable] {
+  border: 1px solid rebeccapurple;
+  color: rebeccapurple;
+  height: 400px;
+  width: 400px;
+}

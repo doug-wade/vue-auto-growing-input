@@ -16,4 +16,15 @@ describe("AutoGrowingInput", () => {
 
     expect(wrapper.emitted("enter-press")).toBeTruthy();
   });
+
+  it("sets placeholder text", () => {
+    const mockPlaceholderText = "placeholder text";
+    const wrapper = mount(AutoGrowingInput, {
+      propsData: { placeholder: mockPlaceholderText },
+    });
+
+    const contentEditable = wrapper.find("div[contenteditable]");
+
+    expect(contentEditable.attributes("placeholder")).toBe(mockPlaceholderText);
+  });
 });
